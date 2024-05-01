@@ -461,3 +461,21 @@ button {
   display: flex;
   flex-direction: column;
 }
+.footer__input-item {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.footer__input {
+  width: 250px;
+  height: 49px;
+  background: #ffffff;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
