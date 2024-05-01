@@ -125,7 +125,10 @@ button {
   text-align: center;
   color: #bfc6ff;
 }
-.promo__button {
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 172px;
   height: 60px;
   font-family: "Actor", sans-serif;
@@ -134,7 +137,15 @@ button {
   line-height: 28.87px;
   background: #a8600b;
   color: #ffffff;
-  border-radius: 100%;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background: #15cfe5;
+}
+.promo__button:hover {
+  background: #000000;
+  color: #ffffff;
 }
 /*---about---*/
 .about {
@@ -159,7 +170,7 @@ button {
   position: relative;
   max-width: 1045px;
   width: 100%;
-  margin: 90px auto 8px;
+  margin: 90px auto 13px;
   border: 14px solid #1d51d8;
 }
 .about__inner span {
