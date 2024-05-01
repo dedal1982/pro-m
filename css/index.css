@@ -43,6 +43,15 @@ button {
   color: #000000;
   text-align: center;
 }
+.subtitle {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+}
 .container {
   width: 100%;
   display: flex;
