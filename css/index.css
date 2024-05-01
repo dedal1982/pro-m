@@ -155,3 +155,29 @@ button {
   line-height: 80px;
   color: #000000;
 }
+.about__inner {
+  position: relative;
+  max-width: 1045px;
+  width: 100%;
+  margin: 90px auto 0;
+  border: 14px solid #1d51d8;
+}
+.about__inner span {
+  margin: 31px auto 25px 29px;
+  display: inline-block;
+  padding-right: 530px;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.about__image {
+  position: absolute;
+  right: -124px;
+  top: -69px;
+}
+.about__image img {
+  max-width: 100%;
+  height: auto;
+}
