@@ -35,12 +35,24 @@ button {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+.title {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  text-align: center;
+}
 .container {
-  max-width: 1440px;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  box-sizing: border-box;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
 }
 /*---header---*/
 .header {
@@ -71,7 +83,6 @@ button {
   align-items: center;
   gap: 97px;
 }
-
 .header__link {
   font-family: "Actor", sans-serif;
   font-weight: 400;
@@ -150,7 +161,6 @@ button {
 /*---about---*/
 .about {
   width: 100%;
-  display: flex;
 }
 .about__wrapper {
   width: 100%;
@@ -158,13 +168,30 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 28px;
+  margin-bottom: 90px;
 }
-.about__title {
-  font-family: "Tauri", sans-serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 80px;
-  color: #000000;
+.title-box {
+  width: fit-content;
+  display: block;
+  position: relative;
+}
+.title-box::before {
+  position: absolute;
+  content: "";
+  width: 111px;
+  height: 1px;
+  background: #f1cbcb;
+  left: -120px;
+  top: 50%;
+}
+.title-box::after {
+  position: absolute;
+  content: "";
+  width: 111px;
+  height: 1px;
+  background: #f1cbcb;
+  right: -120px;
+  top: 50%;
 }
 .about__inner {
   position: relative;
@@ -191,4 +218,15 @@ button {
 .about__image img {
   max-width: 100%;
   height: auto;
+}
+/*---offers---*/
+.offers {
+  width: 100%;
+}
+.offers__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
 }
