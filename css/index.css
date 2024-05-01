@@ -322,3 +322,21 @@ button {
   margin-top: 17px;
   margin-bottom: 9px;
 }
+.tours__prev,
+.tours__next {
+  width: 25px;
+  height: 25px;
+  background: #131010;
+  border-radius: 50%;
+}
+.tours__prev::after,
+.tours__next::after {
+  display: none;
+}
+.tours__next.swiper-button-disabled,
+.tours__prev.swiper-button-disabled {
+  background: #28e3d8;
+  cursor: auto;
+  pointer-events: none;
+  opacity: 1;
+}
