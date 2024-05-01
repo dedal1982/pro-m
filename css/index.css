@@ -405,3 +405,19 @@ button {
   line-height: 17.5px;
   color: #120303;
 }
+/*---footer---*/
+.footer {
+  width: 100%;
+  background: #242a3f;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 45px auto 117px 36px;
+}
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
