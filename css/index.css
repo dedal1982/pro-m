@@ -187,7 +187,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 73px;
+  margin-top: 28px;
   margin-bottom: 90px;
 }
 .title-box {
@@ -297,7 +297,7 @@ button {
 /*---tours__swiper---*/
 .tours__swiper {
   width: 1270px;
-  height: 494px;
+  height: 547px;
 }
 .tours__slide {
   width: 100%;
@@ -328,6 +328,13 @@ button {
   height: 25px;
   background: #131010;
   border-radius: 50%;
+  top: 98%;
+}
+.tours__prev {
+  left: 20px;
+}
+.tours__next {
+  left: 60px;
 }
 .tours__prev::after,
 .tours__next::after {

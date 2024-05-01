@@ -3,7 +3,7 @@ const swiper = new Swiper(".tours__swiper", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 3,
-  spaceBetween: 40,
+  spaceBetween: 20,
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
