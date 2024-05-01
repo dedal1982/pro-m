@@ -63,12 +63,17 @@ button {
   max-width: 1440px;
   width: 100%;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 72px;
+  padding-right: 72px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
 }
 /*---header---*/
 .header {
@@ -252,9 +257,6 @@ button {
   display: flex;
   justify-content: space-between;
   margin-top: 46px;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-sizing: border-box;
 }
 .offers__subtitle {
   margin-top: 30px;
@@ -273,8 +275,13 @@ button {
 .offers__icon img {
   max-width: 100%;
   height: auto;
+  border-radius: inherit;
 }
 .offers__paragraph {
   margin-top: 20px;
   margin-bottom: 24px;
+}
+/*---tours---*/
+.tours {
+  width: 100%;
 }
