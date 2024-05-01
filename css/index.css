@@ -347,3 +347,19 @@ button {
   pointer-events: none;
   opacity: 1;
 }
+/*---blog---*/
+.blog {
+  width: 100%;
+}
+.blog__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 43px;
+}
+.blog__paragraph {
+  max-width: 623px;
+  width: 100%;
+  text-align: center;
+}
