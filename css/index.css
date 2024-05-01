@@ -285,3 +285,14 @@ button {
 .tours {
   width: 100%;
 }
+.tours__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.tours__subtitle {
+  text-align: start;
+  margin-top: 60px;
+}
