@@ -426,6 +426,10 @@ button {
   width: 100%;
   display: flex;
 }
+.footer__item-box {
+  display: flex;
+  gap: 76px;
+}
 .footer__contact-list {
   display: flex;
   flex-direction: column;
