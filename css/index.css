@@ -425,6 +425,7 @@ button {
 .footer__inner {
   width: 100%;
   display: flex;
+  gap: 131px;
 }
 .footer__item-box {
   display: flex;
@@ -455,4 +456,8 @@ button {
 }
 .footer__link:hover {
   color: grey;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
 }
