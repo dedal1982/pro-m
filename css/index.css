@@ -49,7 +49,6 @@ button {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
-  text-align: center;
 }
 .paragraph {
   font-family: "Tauri", sans-serif;
@@ -57,7 +56,6 @@ button {
   font-size: 20px;
   line-height: 25px;
   color: #000000;
-  text-align: center;
 }
 .container {
   max-width: 1440px;
@@ -295,4 +293,32 @@ button {
 .tours__subtitle {
   text-align: start;
   margin-top: 60px;
+}
+/*---tours__swiper---*/
+.tours__swiper {
+  width: 1270px;
+  height: 494px;
+}
+.tours__slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.tours__slide-image {
+  display: flex;
+  width: 100%;
+  height: 251px;
+  margin: 0 auto;
+}
+.tours__slide-image img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.slide-subtitle {
+  margin-top: 17px;
+  margin-bottom: 9px;
 }
