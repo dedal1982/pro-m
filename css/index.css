@@ -440,6 +440,10 @@ button {
   display: flex;
   align-items: center;
   gap: 22px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social-list li:hover {
+  opacity: 0.7;
 }
 .footer__inner {
   width: 100%;
@@ -700,7 +704,7 @@ textarea:focus::placeholder {
   }
 }
 /*---------------------*/
-.heade__nav.active {
+.header__nav.active {
   height: fit-content;
   transition: all 0.3s ease-in-out;
 }
@@ -711,7 +715,7 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1024px) {
-  .heade__nav {
+  .header__nav {
     height: 0;
     overflow: hidden;
   }
