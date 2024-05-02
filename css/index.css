@@ -563,11 +563,24 @@ textarea:focus::placeholder {
 }
 /*---адаптив---*/
 @media (max-width: 1300px) {
+  .page {
+    padding-top: 85px;
+  }
   .header__list {
     gap: 50px;
   }
   .header__link {
     font-size: 19px;
+  }
+  .promo__title,
+  .promo__text span {
+    font-size: 85px;
+    line-height: 86.84px;
+  }
+  .promo__wrapper {
+  }
+  .promo {
+    height: fit-content;
   }
 }
 /***бургер***/
@@ -672,5 +685,23 @@ textarea:focus::placeholder {
   .header__list {
     align-items: start;
     gap: 20px;
+  }
+  .promo__title {
+    font-size: 55px;
+    line-height: 50px;
+  }
+  .promo__text span {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .promo__wrapper {
+    margin-top: 70px;
+    margin-bottom: 200px;
+    gap: 30px;
+  }
+  .button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
   }
 }
