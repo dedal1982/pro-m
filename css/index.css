@@ -583,6 +583,10 @@ textarea:focus::placeholder {
   .about__image {
     display: none;
   }
+  .about__wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   .about__inner span {
     padding-right: 0;
     margin-right: 25px;
@@ -594,6 +598,11 @@ textarea:focus::placeholder {
   .title {
     font-size: 50px;
     line-height: 60px;
+  }
+  .offers__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
 }
 /***бургер***/
@@ -675,7 +684,7 @@ textarea:focus::placeholder {
   height: fit-content;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .heade__nav {
     height: 0;
     overflow: hidden;
@@ -734,6 +743,19 @@ textarea:focus::placeholder {
     font-size: 18px;
     line-height: 26px;
   }
+  .offers__icon {
+    width: 130px;
+    height: 130px;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .paragraph {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 767px) {
   .title {
@@ -746,5 +768,11 @@ textarea:focus::placeholder {
   }
   .about__inner {
     margin-top: 30px;
+  }
+  .offers__item {
+    width: 100%;
+  }
+  .offers__icon {
+    margin-bottom: 10px;
   }
 }
