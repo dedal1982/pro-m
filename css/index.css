@@ -577,10 +577,23 @@ textarea:focus::placeholder {
     font-size: 85px;
     line-height: 86.84px;
   }
-  .promo__wrapper {
-  }
   .promo {
     height: fit-content;
+  }
+  .about__image {
+    display: none;
+  }
+  .about__inner span {
+    padding-right: 0;
+    margin-right: 25px;
+  }
+  .title-box::before,
+  .title-box::after {
+    display: none;
+  }
+  .title {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 /***бургер***/
@@ -703,5 +716,35 @@ textarea:focus::placeholder {
     width: 150px;
     height: 40px;
     font-size: 18px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .about__wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .about__inner {
+    margin-top: 50px;
+    border: 5px solid #1d51d8;
+  }
+  .about__inner span {
+    margin: 15px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 25px;
+  }
+  .about__inner span {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .about__inner {
+    margin-top: 30px;
   }
 }
