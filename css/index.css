@@ -35,6 +35,9 @@ button {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+.lock {
+  overflow: hidden;
+}
 .title {
   font-family: "Tauri", sans-serif;
   font-weight: 400;
@@ -100,15 +103,19 @@ button {
   z-index: 999;
 }
 .header__wrapper {
-  width: 1270px;
+  max-width: 1270px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
+
 .header__logo {
   width: 233px;
   height: 74px;
@@ -546,4 +553,87 @@ textarea:focus::placeholder {
 .acor-container {
   width: 1114px;
   margin: 20px 0;
+}
+/*---адаптив---*/
+@media (max-width: 1300px) {
+  .header__list {
+    gap: 50px;
+  }
+  .header__link {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
+/***бургер***/
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 999;
+    float: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger:before {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger:after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger span {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__burger.active span {
+    transform: scale(0);
+  }
 }
