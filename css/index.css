@@ -325,17 +325,22 @@ button {
   margin-top: 60px;
 }
 /*---tours__swiper---*/
+.swiper-slide {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
 .tours__swiper {
-  width: 1270px;
+  max-width: 1270px;
+  width: 100%;
   height: 555px;
 }
 .tours__slide {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
 }
 .tours__slide-image {
   display: flex;
@@ -400,7 +405,6 @@ button {
 .blog__item-image {
   position: relative;
   width: 100%;
-  height: 318.36px;
 }
 .blog__item-image img {
   width: 100%;
@@ -546,17 +550,7 @@ textarea:focus::placeholder {
   background: #15cfe5;
 }
 /*---countries---*/
-.about {
-  width: 100%;
-}
-.about__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 82px;
-  margin-bottom: 240px;
-}
+
 .acor-container {
   width: 1114px;
   margin: 20px 0;
@@ -684,6 +678,12 @@ textarea:focus::placeholder {
   height: fit-content;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1080px) {
+  .paragraph {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .heade__nav {
     height: 0;
@@ -752,9 +752,29 @@ textarea:focus::placeholder {
     line-height: 25px;
     text-align: center;
   }
-  .paragraph {
+  .blog-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .paragraph,
+  .blog-paragraph {
     font-size: 15px;
     line-height: 21px;
+  }
+  .slide-subtitle {
+    text-align: start;
+  }
+}
+@media (max-width: 768px) {
+  .tours__swiper {
+    height: 475px;
+  }
+  .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+  }
+  .tours__subtitle {
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -775,4 +795,54 @@ textarea:focus::placeholder {
   .offers__icon {
     margin-bottom: 10px;
   }
+  .blog__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog__item {
+    max-width: 100%;
+  }
 }
+/*****************************/
+/* .accordion {
+  width: 1114px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  .accordion-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .accordion-header {
+      width: 100%;
+      height: 50px;
+      background-color: #e0e0e0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      text-align: left;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #fff;
+      padding: 10px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+} */
