@@ -433,7 +433,7 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 45px auto 117px 36px;
+  margin: 45px auto 70px 36px;
   gap: 26px;
 }
 .footer__social-list {
@@ -867,7 +867,7 @@ textarea:focus::placeholder {
   }
 }
 /*****************************/
-/* .accordion {
+.accordion {
   width: 1114px;
   display: flex;
   flex-direction: column;
@@ -908,4 +908,4 @@ textarea:focus::placeholder {
       }
     }
   }
-} */
+}
