@@ -514,3 +514,19 @@ textarea:focus::placeholder {
   padding-top: 5px;
   box-sizing: border-box;
 }
+.footer__button {
+  width: 117px;
+  height: 43px;
+  background: #000000;
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  align-self: flex-end;
+  margin-top: 23px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__button:hover {
+  background: #15cfe5;
+}
