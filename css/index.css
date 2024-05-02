@@ -477,7 +477,8 @@ button {
   color: grey;
 }
 .footer__form {
-  width: 536px;
+  max-width: 536px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -523,7 +524,8 @@ textarea:focus::placeholder {
   color: transparent;
 }
 .footer__input {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 49px;
 }
 .footer__input-comment {
@@ -556,7 +558,7 @@ textarea:focus::placeholder {
   margin: 20px 0;
 }
 /*---адаптив---*/
-@media (max-width: 1300px) {
+@media (max-width: 1325px) {
   .page {
     padding-top: 85px;
   }
@@ -598,7 +600,31 @@ textarea:focus::placeholder {
     justify-content: center;
     gap: 40px;
   }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__text {
+    font-size: 15px;
+  }
+  input,
+  textarea {
+    font-size: 18px;
+  }
+  .footer__inner {
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .footer__item-box {
+    gap: 30px;
+  }
+  .footer__form {
+    max-width: 50%;
+  }
+  .footer__wrapper {
+    margin-bottom: 45px;
+  }
 }
+
 /***бургер***/
 .header__burger {
   display: none;
@@ -765,6 +791,20 @@ textarea:focus::placeholder {
     text-align: start;
   }
 }
+@media (max-width: 1023px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__form {
+    max-width: 100%;
+  }
+  .footer__input {
+    max-width: 100%;
+  }
+  .footer__wrapper {
+    margin: 45px auto;
+  }
+}
 @media (max-width: 768px) {
   .tours__swiper {
     height: 475px;
@@ -801,6 +841,25 @@ textarea:focus::placeholder {
   }
   .blog__item {
     max-width: 100%;
+  }
+  .footer__input-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__input-comment {
+    margin-top: 10px;
+  }
+  .footer__item-box {
+    flex-direction: column;
+  }
+  .footer__button {
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .footer__input {
+    height: 40px;
   }
 }
 /*****************************/
