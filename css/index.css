@@ -293,6 +293,7 @@ button {
 .offers__paragraph {
   margin-top: 20px;
   margin-bottom: 24px;
+  text-align: center;
 }
 /*---tours---*/
 .tours {
@@ -529,4 +530,20 @@ textarea:focus::placeholder {
 }
 .footer__button:hover {
   background: #15cfe5;
+}
+/*---countries---*/
+.about {
+  width: 100%;
+}
+.about__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 82px;
+  margin-bottom: 240px;
+}
+.acor-container {
+  width: 1114px;
+  margin: 20px 0;
 }
