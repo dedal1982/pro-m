@@ -1,19 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const accordionHeaders = document.querySelectorAll(".accordion-header");
+const accordBtn = document.querySelector(".accordion-header");
+const accordContent = document.querySelector(".accordion-content");
+const accordBtnImg = document.querySelector(".accordion-button svg");
+const accordBtnBox = document.querySelector(".accordion-button");
 
-  accordionHeaders.forEach((header) => {
-    header.addEventListener("click", () => {
-      const accordionItem = header.parentElement;
-      const accordionContent =
-        accordionItem.querySelector(".accordion-content");
-
-      if (header.getAttribute("aria-expanded") === "false") {
-        header.setAttribute("aria-expanded", "true");
-        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-      } else {
-        header.setAttribute("aria-expanded", "false");
-        accordionContent.style.maxHeight = "0";
-      }
-    });
-  });
+accordBtn.addEventListener("click", () => {
+  accordContent.classList.toggle("open");
+  accordBtnImg.classList.toggle("open");
+  accordBtnBox.classList.toggle("open");
 });
