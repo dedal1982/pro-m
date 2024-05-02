@@ -1,6 +1,6 @@
 const burgerClick = document.querySelector(".header__burger");
 const scrollLock = document.querySelector(".page-body");
-const mobMenu = document.querySelector(".mobile-menu");
+const mobMenu = document.querySelector(".heade__nav");
 
 //открытие бургера
 burgerClick.addEventListener("click", () => {
