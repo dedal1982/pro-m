@@ -943,6 +943,7 @@ textarea::placeholder {
   background-color: rgb(0 0 0 / 16%);
   justify-content: space-between;
   flex-direction: column;
+  z-index: 999;
 }
 .popup-exit {
   display: none;
