@@ -1,39 +1,21 @@
 @import "../css/index.css";
-/* 
-* Typography
-*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-/*
-* Color Variables
-*/
 $light-white: #ffffff;
 $light-grey: #aaa6a6;
 $med-grey: #666;
 $dark-black: #000;
-$highlight-color: #27ae60;
 $blue-light: #2ec8d7;
-
-/*
-* Animation Variables
-*/
 
 $timing: 0.4s;
 $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
-
-/* 
-* Global
-*/
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
-/* 
-* Base
-*/
 
 .accordion-page {
   &:before {
@@ -46,11 +28,6 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
   }
 }
 
-/*
-* Accordion
-*/
-
-/* Basic Accordion Styles */
 .accordion-page {
   position: relative;
   width: 100%;
@@ -64,12 +41,10 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
   width: 75%;
   box-shadow: 0 1px 8px rgba(#000, 0.25);
 
-  /* Radio Inputs */
   input[name="panel"] {
     display: none;
   }
 
-  /* Labels */
   label {
     position: relative;
     display: block;
@@ -78,11 +53,12 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
     border-top: 1px solid #fff;
     border-bottom: 1px solid rgba(#000, 0.15);
     box-shadow: inset 0 2px 0 #fff;
-    font-size: 1.5em;
+    font-size: 18px;
     text-shadow: 0 1px 0 rgba(#fff, 0.75);
     color: $dark-black;
     cursor: pointer;
     transition: all $timing $ease;
+    padding: 10px 20px;
 
     &:after {
       content: "\276F";
@@ -99,6 +75,7 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
       justify-content: center;
       color: $light-grey;
       text-align: center;
+      transform: rotate(90deg);
     }
 
     &:hover {
@@ -113,10 +90,10 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
       content: "\276E";
       background: $blue-light;
       line-height: 0.8em;
+      color: $light-white;
     }
   }
 
-  /* Panel Content */
   .accordion__content {
     overflow: hidden;
     height: 0px;
@@ -126,15 +103,6 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
     color: $light-white;
     transition: height $timing $ease;
 
-    &:not(:last-of-type) {
-      box-shadow: inset 0 -2px 2px rgba(#000, 0.25),
-        inset 4px 0 0 0 $highlight-color, inset 0 3px 6px rgba(#000, 0.75);
-    }
-
-    .accordion__header {
-      padding: 1em 0;
-    }
-
     .accordion__body {
       font-size: 0.825em;
       line-height: 1.4em;
@@ -142,18 +110,10 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
   }
 }
 
-/* 
-* Size Variations
-*/
-
-input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
-  height: 150px;
-}
-
 input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
   height: 200px;
-}
-
-input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
-  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
