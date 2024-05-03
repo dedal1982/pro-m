@@ -28,10 +28,9 @@
 //   });
 // });
 //--------------------------------------
-document.getElementById("openPopup").addEventListener("click", function () {
-  document.getElementById("popup").style.display = "block";
-});
+const popupPage = document.querySelector(".popup");
+const popupClose = document.querySelector(".popup-close");
 
-document.getElementById("closePopup").addEventListener("click", function () {
-  document.getElementById("popup").style.display = "none";
+popupClose.addEventListener("click", () => {
+  popupPage.classList.add("popup-exit");
 });

@@ -944,7 +944,9 @@ textarea::placeholder {
   justify-content: space-between;
   flex-direction: column;
 }
-
+.popup-exit {
+  display: none;
+}
 .popup-content {
   position: relative;
   display: flex;
@@ -980,7 +982,7 @@ textarea::placeholder {
 }
 
 .popup-content .left .small-images img {
-  width: 19%;
+  width: 19.5%;
 }
 
 .popup-content .right {
