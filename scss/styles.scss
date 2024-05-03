@@ -18,17 +18,6 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
 
 .accordion-page {
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-.accordion-page {
   position: relative;
   width: 100%;
   height: 600px;
@@ -48,7 +37,7 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
   label {
     position: relative;
     display: block;
-    height: 45px;
+    height: 50px;
     background: $light-white;
     border-top: 1px solid #fff;
     border-bottom: 1px solid rgba(#000, 0.15);
@@ -68,8 +57,8 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
       right: 0;
       top: 0;
       bottom: 0;
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -114,8 +103,4 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
   min-height: 200px;
   height: fit-content;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-sizing: border-box;
 }
