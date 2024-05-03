@@ -937,11 +937,16 @@ textarea::placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  background: gray;
+  background: #80808017;
 }
 .popup__wrapper {
   width: 100%;
   margin: 50px auto;
+}
+.popup__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .popup__left {
   width: 800px;
@@ -953,6 +958,7 @@ textarea::placeholder {
   width: 800px;
   height: 650px;
   position: relative;
+  border-radius: 5px;
 }
 .popup__top img {
   width: 100%;
@@ -961,6 +967,7 @@ textarea::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: inherit;
 }
 .popup__bottom {
   width: 100%;
@@ -970,9 +977,31 @@ textarea::placeholder {
   width: 200px;
   padding: 3px;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 .popup__item img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: inherit;
+}
+.popup__right {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.popup__text {
+  width: 100%;
+  padding: 50px 0;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.popup__title {
+  font-family: "Tauri", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  color: #000000;
+  text-align: center;
 }
