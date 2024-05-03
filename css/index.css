@@ -518,10 +518,34 @@ textarea {
   padding-right: 12px;
   box-sizing: border-box;
 }
-textarea:focus {
-  outline: none !important;
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
 }
-input:focus::placeholder {
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
   color: transparent;
 }
 input::placeholder {
@@ -530,13 +554,12 @@ input::placeholder {
 textarea::placeholder {
   color: #000000;
 }
-textarea:focus::placeholder {
-  color: transparent;
-}
+
 .footer__input {
   max-width: 250px;
   width: 100%;
   height: 49px;
+  border-radius: 5px;
 }
 .footer__input-comment {
   width: 100%;
@@ -544,6 +567,7 @@ textarea:focus::placeholder {
   margin-top: 27px;
   padding-top: 5px;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 .footer__button {
   width: 117px;
@@ -560,12 +584,6 @@ textarea:focus::placeholder {
 }
 .footer__button:hover {
   background: #15cfe5;
-}
-/*---countries---*/
-
-.acor-container {
-  width: 1114px;
-  margin: 20px 0;
 }
 /*---адаптив---*/
 @media (max-width: 1325px) {

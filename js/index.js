@@ -23,14 +23,6 @@ links.forEach((link) => {
 
     // Добавляем класс 'active' к текущей ссылке
     this.classList.add("active");
+    mobMenu.classList.remove("active");
   });
 });
-
-// document.querySelectorAll(".accordionTitle").forEach(function (item) {
-//   item.addEventListener("click", function () {
-//     this.nextElementSibling.classList.toggle("active");
-//     this.nextElementSibling.style.display =
-//       this.nextElementSibling.style.display === "none" ? "block" : "none";
-//     this.classList.toggle("active");
-//   });
-// });
