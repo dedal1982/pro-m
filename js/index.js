@@ -24,5 +24,6 @@ links.forEach((link) => {
     // Добавляем класс 'active' к текущей ссылке
     this.classList.add("active");
     mobMenu.classList.remove("active");
+    burgerClick.classList.remove("active");
   });
 });
