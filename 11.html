@@ -9,51 +9,44 @@
   <body>
     <div class="popup">
       <div class="container">
-        <div class="popup__wrapper">
-          <div class="popup__inner">
-            <div class="popup__left">
-              <div class="popup__top">
-                <img src="./images/blog-1.jpg" alt="картинка" />
-              </div>
-              <div class="popup__bottom">
-                <div class="popup__item">
-                  <img src="./images/slide-1.jpg" alt="картинка" />
-                </div>
-                <div class="popup__item">
-                  <img src="./images/slide-1.jpg" alt="картинка" />
-                </div>
-                <div class="popup__item">
-                  <img src="./images/slide-1.jpg" alt="картинка" />
-                </div>
-                <div class="popup__item">
-                  <img src="./images/slide-1.jpg" alt="картинка" />
-                </div>
-                <div class="popup__item">
-                  <img src="./images/slide-1.jpg" alt="картинка" />
+        <button onclick="showPopup()">Открыть попап</button>
+
+        <div class="popup" id="popup">
+          <div class="popup-content">
+            <div class="left">
+              <img src="./images/blog-1.jpg" alt="Большая картин" />
+              <div class="small-images-wrapper">
+                <div class="small-images">
+                  <img src="./images/slide-1.jpg" alt="Маленькая картинка" />
+                  <img src="./images/slide-1.jpg" alt="Маленькая картинка" />
+                  <img src="./images/slide-1.jpg" alt="Маленькая картинка" />
+                  <img src="./images/slide-1.jpg" alt="Маленькая картинка" />
+                  <img src="./images/slide-1.jpg" alt="Маленькая картинка" />
                 </div>
               </div>
             </div>
-            <div class="popup__right">
-              <div class="popup__text">
-                <h6 class="popup__title">Название</h6>
-                <div class="popup__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus illum, dolore non aliquid at tempora dolor
-                  necessitatibus iusto amet accusantium voluptate eveniet
-                  impedit debitis? Quaerat, perspiciatis recusandae eligendi
-                  nulla expedita, dignissimos officia ducimus commodi laborum
-                  aliquam enim quae dolorum accusantium voluptate, minus
-                  necessitatibus animi facere vitae totam temporibus minima
-                  earum.
-                </div>
-                <span class="popup__price">цена</span>
-              </div>
-              <button class="button general-button" type="button">
+            <div class="right">
+              <h2>Заголовок</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatem molestiae tempore at iure quisquam laborum qui amet?
+                Quae, aliquid illo delectus nisi porro soluta? Explicabo ullam
+                saepe et nam nihil maiores earum. Rerum, accusamus quod.
+                Inventore labore porro iste sit similique quisquam aspernatur?
+                Harum, necessitatibus non fugit rem blanditiis labore!
+              </p>
+              <span>Цена: 100$</span>
+              <button class="button general-button" type="submit">
                 забронировать тур
               </button>
             </div>
           </div>
         </div>
+        <script>
+          function showPopup() {
+            document.getElementById("popup").style.display = "flex";
+          }
+        </script>
       </div>
     </div>
   </body>
