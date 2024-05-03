@@ -931,8 +931,11 @@ textarea::placeholder {
   color: #ffffff;
 }
 /*************************/
+.element {
+  cursor: pointer;
+}
 .popup {
-  display: flex;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -945,8 +948,8 @@ textarea::placeholder {
   flex-direction: column;
   z-index: 999;
 }
-.popup-exit {
-  display: none;
+.popup-open {
+  display: flex;
 }
 .popup-content {
   position: relative;
