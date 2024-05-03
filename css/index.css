@@ -873,69 +873,6 @@ textarea:focus::placeholder {
   }
 }
 /*****************************/
-.accordion {
-  max-width: 1114px;
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-  .accordion-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 0 0 0 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-
-    .accordion-title {
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    .accordion-button {
-      width: 50px;
-      height: 100%;
-      background: none;
-      border: none;
-      cursor: pointer;
-      outline: none;
-
-      svg {
-        transition: transform 0.3s ease;
-      }
-    }
-  }
-
-  .accordion-content {
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    background-color: #2ec8d7;
-    color: #fff;
-    padding: 0;
-
-    p {
-      margin: 0;
-    }
-  }
-}
-
-.accordion-content.open {
-  max-height: fit-content;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.accordion-button.open {
-  background-color: #2ec8d7 !important;
-}
-.accordion-button svg.open {
-  transform: rotate(180deg);
-}
 /*---general---*/
 .general {
   width: 100%;

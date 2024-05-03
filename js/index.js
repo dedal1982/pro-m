@@ -25,3 +25,12 @@ links.forEach((link) => {
     this.classList.add("active");
   });
 });
+
+document.querySelectorAll(".accordionTitle").forEach(function (item) {
+  item.addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("active");
+    this.nextElementSibling.style.display =
+      this.nextElementSibling.style.display === "none" ? "block" : "none";
+    this.classList.toggle("active");
+  });
+});

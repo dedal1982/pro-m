@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import "../css/index.css";
+/* 
+* Typography
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*
+* Color Variables
+*/
+/*
+* Animation Variables
+*/
+/* 
+* Global
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* 
+* Base
+*/
+.accordion-page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+* Accordion
+*/
+/* Basic Accordion Styles */
+.accordion-page {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.accordion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  /* Radio Inputs */
+  /* Labels */
+  /* Panel Content */
+}
+.accordion input[name=panel] {
+  display: none;
+}
+.accordion label {
+  position: relative;
+  display: block;
+  height: 45px;
+  background: #ffffff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 2px 0 #fff;
+  font-size: 1.5em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+.accordion label:after {
+  content: "❯";
+  float: right;
+  position: absolute;
+  font-size: 15px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa6a6;
+  text-align: center;
+}
+.accordion label:hover {
+  color: #666;
+}
+.accordion input:checked + label {
+  color: #000;
+}
+.accordion input:checked + label:after {
+  content: "❮";
+  background: #2ec8d7;
+  line-height: 0.8em;
+}
+.accordion .accordion__content {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  padding: 0 1.5em;
+  background: #2ec8d7;
+  color: #ffffff;
+  transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+.accordion .accordion__content:not(:last-of-type) {
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.25), inset 4px 0 0 0 #27ae60, inset 0 3px 6px rgba(0, 0, 0, 0.75);
+}
+.accordion .accordion__content .accordion__header {
+  padding: 1em 0;
+}
+.accordion .accordion__content .accordion__body {
+  font-size: 0.825em;
+  line-height: 1.4em;
+}
+
+/* 
+* Size Variations
+*/
+input[name=panel]:checked ~ .accordion__content.accordion__content--small {
+  height: 150px;
+}
+
+input[name=panel]:checked ~ .accordion__content.accordion__content--med {
+  height: 200px;
+}
+
+input[name=panel]:checked ~ .accordion__content.accordion__content--large {
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */
