@@ -942,6 +942,12 @@ textarea::placeholder {
   cursor: pointer;
   position: relative;
 }
+.right-item {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: auto;
+}
 .element-paragraph {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1029,13 +1035,11 @@ textarea::placeholder {
 }
 
 .popup-content .right p {
-  font-family: "Actor", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
 .popup-content .right span {
-  font-family: "Actor", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 25px;
 }
 
