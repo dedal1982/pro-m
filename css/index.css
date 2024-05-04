@@ -1000,7 +1000,8 @@ textarea::placeholder {
 }
 
 .popup-content .left .small-images img {
-  width: 19.5%;
+  width: 20%;
+  padding: 5px;
 }
 
 .popup-content .right {
