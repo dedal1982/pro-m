@@ -43,7 +43,9 @@ popupClose.forEach((element) => {
 buttonSubmit.forEach((element) => {
   element.addEventListener("click", function (event) {
     event.stopPropagation();
-    popupPage.classList.remove("popup-open");
+    if (popupPage && popupPage.classList.contains("popup-open")) {
+      popupPage.classList.remove("popup-open");
+    }
     popupForm.classList.add("popup-form-open");
   });
 });
