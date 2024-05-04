@@ -1122,6 +1122,7 @@ textarea::placeholder {
 
 .mail-message.active {
   display: block;
+  position: fixed;
 }
 @media (max-width: 424px) {
   .popup-content .right h2 {
