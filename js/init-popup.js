@@ -35,6 +35,7 @@ popupClose.forEach((element) => {
     event.stopPropagation();
     popupPage.classList.remove("popup-open");
     popupForm.classList.remove("popup-form-open");
+    pageLock.classList.remove("lock");
   });
 });
 
