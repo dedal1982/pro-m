@@ -7,6 +7,7 @@ const popupTitle = document.querySelector(".element-title");
 const popupParagraph = document.querySelector(".element-paragraph");
 const popupPrice = document.querySelector(".element-price");
 const buttonSubmit = document.querySelectorAll(".general-button");
+const buttonSend = document.getElementById("send-btn");
 
 document.addEventListener("DOMContentLoaded", function () {
   const elementsWithClass = document.querySelectorAll(".element");
@@ -43,4 +44,12 @@ buttonSubmit.forEach((element) => {
     popupPage.classList.remove("popup-open");
     popupForm.classList.add("popup-form-open");
   });
+});
+
+buttonSend.addEventListener("click", function () {
+  popupForm.classList.remove("popup-form-open");
+  document.querySelector(".mail-message").classList.add("active");
+  setTimeout(function () {
+    window.location.href = "index.html";
+  }, 5000);
 });
