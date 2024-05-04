@@ -661,7 +661,7 @@ textarea::placeholder {
 .header__burger {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger-box {
     position: absolute;
     top: 32.5px;
@@ -676,7 +676,7 @@ textarea::placeholder {
     float: right;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger:before {
     content: "";
     background-color: #ffffff;
@@ -688,14 +688,14 @@ textarea::placeholder {
     transition: all 0.3s ease 0s;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger.active:before {
     transform: rotate(45deg);
     top: 9px;
     transition: all 0.3s ease 0s;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger:after {
     content: "";
     background-color: #ffffff;
@@ -707,14 +707,14 @@ textarea::placeholder {
     transition: all 0.3s ease 0s;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
     transition: all 0.3s ease 0s;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger span {
     content: "";
     background-color: #ffffff;
@@ -726,7 +726,7 @@ textarea::placeholder {
     transition: all 0.3s ease 0s;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__burger.active span {
     transform: scale(0);
   }
