@@ -1,3 +1,4 @@
+//переменные----------------------------------------------------
 const burgerClick = document.querySelector(".header__burger");
 const scrollLock = document.querySelector(".page-body");
 const mobMenu = document.querySelector(".header__nav");
@@ -23,11 +24,9 @@ links.forEach((link) => {
     links.forEach((link) => {
       link.classList.remove("active");
     });
-
     document.querySelectorAll("section").forEach((section) => {
       section.classList.remove("active");
     });
-
     // Добавляем класс 'active' к текущей ссылке
     this.classList.add("active");
 
