@@ -1,7 +1,5 @@
 @import "../css/index.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Tauri&display=swap");
-
 $light-white: #ffffff;
 $light-grey: #aaa6a6;
 $med-grey: #666;
@@ -28,6 +26,7 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
   }
 
   label {
+    font-family: "Actor", sans-serif;
     position: relative;
     display: block;
     height: 50px;

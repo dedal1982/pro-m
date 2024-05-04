@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import "../css/index.css";
-@import url("https://fonts.googleapis.com/css2?family=Tauri&display=swap");
 *,
 *:before,
 *:after {
@@ -17,6 +16,7 @@
   display: none;
 }
 .accordion label {
+  font-family: "Actor", sans-serif;
   position: relative;
   display: block;
   height: 50px;
