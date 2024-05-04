@@ -8,6 +8,7 @@ const popupParagraph = document.querySelector(".element-paragraph");
 const popupPrice = document.querySelector(".element-price");
 const buttonSubmit = document.querySelectorAll(".general-button");
 const buttonSend = document.getElementById("send-btn");
+const pageLock = document.querySelector(".page-body");
 
 document.addEventListener("DOMContentLoaded", function () {
   const elementsWithClass = document.querySelectorAll(".element");
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     element.addEventListener("click", function (event) {
       event.stopPropagation();
       popupPage.classList.add("popup-open");
+      pageLock.classList.add("lock");
       const tImageSrc = this.querySelector(".t-image").src;
       const slideSubtitle = this.querySelector(".slide-subtitle").textContent;
       const paragraphText = this.querySelector(".paragraph").textContent;
