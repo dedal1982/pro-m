@@ -1140,4 +1140,7 @@ textarea::placeholder {
   .popup-content .right span {
     font-size: 20px;
   }
+  .popup-content .right {
+    padding: 10px;
+  }
 }
