@@ -1,6 +1,6 @@
 @import "../css/index.css";
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Tauri&display=swap");
 
 $light-white: #ffffff;
 $light-grey: #aaa6a6;
@@ -19,7 +19,7 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
 
 .accordion {
   margin: 100px auto;
-  max-width: 1114px;
+  max-width: 1440px;
   width: 100%;
   box-shadow: 0 1px 8px rgba(#000, 0.25);
 
@@ -86,14 +86,14 @@ $ease: cubic-bezier(0.865, 0.14, 0.095, 0.87);
     transition: height $timing $ease;
 
     .accordion__body {
-      font-size: 0.825em;
-      line-height: 1.4em;
+      font-size: 1em;
+      line-height: 1.5em;
+      margin: 10px;
     }
   }
 }
 
 input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
-  min-height: 200px;
   height: fit-content;
   padding: 20px 50px 20px 20px;
 }
@@ -106,8 +106,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
       font-size: 1em;
       padding: 10px 50px 10px 10px;
     }
-  }
-  .accordion {
+
     input:checked {
       + label {
         &:after {
@@ -116,5 +115,8 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
         }
       }
     }
+  }
+  input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
+    padding: 20px 0;
   }
 }
