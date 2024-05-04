@@ -945,8 +945,7 @@ textarea::placeholder {
 .right-item {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-top: auto;
+  gap: 10px;
 }
 .element-paragraph {
   margin-top: 30px;
@@ -1025,6 +1024,7 @@ textarea::placeholder {
   flex: 0.7;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -1072,10 +1072,6 @@ textarea::placeholder {
 }
 
 @media (max-width: 425px) {
-  .popup-content .left img {
-    /* max-width: 200px; */
-  }
-
   .popup-content .left .small-images img {
     width: 30%;
   }
@@ -1126,4 +1122,16 @@ textarea::placeholder {
 
 .mail-message.active {
   display: block;
+}
+@media (max-width: 424px) {
+  .popup-content .right h2 {
+    font-size: 30px;
+  }
+  .popup-content .right p {
+    font-size: 18px;
+    margin: 0;
+  }
+  .popup-content .right span {
+    font-size: 20px;
+  }
 }
