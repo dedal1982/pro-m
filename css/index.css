@@ -312,6 +312,7 @@ button {
 /*---tours---*/
 .tours {
   width: 100%;
+  position: relative;
 }
 .tours__wrapper {
   width: 100%;
@@ -1060,6 +1061,7 @@ textarea::placeholder {
   }
 }
 /**---form-submit---*/
+
 .popup-form {
   display: none;
   position: absolute;
