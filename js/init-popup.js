@@ -46,12 +46,15 @@ buttonSubmit.forEach((element) => {
     if (popupPage && popupPage.classList.contains("popup-open")) {
       popupPage.classList.remove("popup-open");
     }
-    popupForm.classList.add("popup-form-open");
+    if (popupForm) {
+      popupForm.classList.add("popup-form-open");
+    }
   });
 });
 
 buttonSend.addEventListener("click", function () {
-  popupForm.classList.remove("popup-form-open");
+  if (popupForm && popupForm.classList.contains("popup-form-open"))
+    popupForm.classList.remove("popup-form-open");
   document.querySelector(".mail-message").classList.add("active");
   setTimeout(function () {
     window.location.href = "index.html";
