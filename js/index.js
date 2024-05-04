@@ -39,3 +39,13 @@ links.forEach((link) => {
     }
   });
 });
+
+const smallImages = document.querySelectorAll(".small-images img");
+const elementMImg = document.querySelector(".element-m-img");
+
+smallImages.forEach((img) => {
+  img.addEventListener("click", function () {
+    const newSrc = this.getAttribute("data-src");
+    elementMImg.src = newSrc;
+  });
+});
