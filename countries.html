@@ -334,39 +334,43 @@
         <script src="./js/popup.js"></script>
       </div>
       <div class="popup-form popup-form-open">
-        <form class="general-form form-submit" action="#">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required=""
-            placeholder="Имя*"
-          />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required=""
-            placeholder="Телефон"
-          />
-          <input
-            type="email"
-            id="email"
-            pattern=".+@example\.com"
-            size="30"
-            required=""
-            placeholder="E-mail"
-          />
-          <input
-            type="text"
-            id="text"
-            name="text"
-            required=""
-            placeholder="Введите текущий год"
-          />
-          <button class="button general-button" type="submit">отправить</button>
-        </form>
+        <div class="form-submit">
+          <form class="general-form" action="#">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required=""
+              placeholder="Имя*"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required=""
+              placeholder="Телефон"
+            />
+            <input
+              type="email"
+              id="email"
+              pattern=".+@example\.com"
+              size="30"
+              required=""
+              placeholder="E-mail"
+            />
+            <input
+              type="text"
+              id="text"
+              name="text"
+              required=""
+              placeholder="Введите текущий год"
+            />
+            <button class="button general-button" type="submit">
+              отправить
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
