@@ -347,12 +347,13 @@ button {
   flex-direction: column;
 }
 .tours__slide-image {
-  display: flex;
+  position: relative;
+  display: block;
   width: 100%;
   height: 251px;
   margin: 0 auto;
 }
-.tours__slide-image img {
+.t-image {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
@@ -958,8 +959,8 @@ textarea::placeholder {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 0;
-  right: 25px;
+  top: -15px;
+  right: -10px;
 }
 .popup {
   display: none;
@@ -976,6 +977,17 @@ textarea::placeholder {
 }
 .popup-open {
   display: flex;
+}
+.t-day {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  display: inline-block;
+  background: orange;
+  padding: 5px;
+  color: #000;
+  border-radius: 2px;
 }
 .popup-content {
   position: relative;

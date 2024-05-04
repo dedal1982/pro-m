@@ -9,12 +9,14 @@ const popupPrice = document.querySelector(".element-price");
 const buttonSubmit = document.querySelectorAll(".general-button");
 const buttonSend = document.getElementById("send-btn");
 const pageLock = document.querySelector(".page-body");
+const popupDay = document.querySelector(".element-day");
 
 document.addEventListener("DOMContentLoaded", function () {
   const elementsWithClass = document.querySelectorAll(".element");
   elementsWithClass.forEach((element) => {
     element.addEventListener("click", function (event) {
       event.stopPropagation();
+      const tDay = this.querySelector(".t-day").textContent;
       const tImageSrc = this.querySelector(".t-image").src;
       const slideSubtitle = this.querySelector(".slide-subtitle").textContent;
       const paragraphText = this.querySelector(".paragraph").textContent;
@@ -24,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       popupMainImage.src = tImageSrc;
       popupTitle.textContent = slideSubtitle;
       popupParagraph.textContent = paragraphText;
+      popupDay.textContent = tDay;
 
       popupPrice.textContent = priceText;
     });

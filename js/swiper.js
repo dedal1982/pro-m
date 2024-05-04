@@ -14,8 +14,8 @@ const swiper = new Swiper(".tours__swiper", {
       slidesPerView: 1,
       spaceBetween: 40,
     },
-    740: {
-      slidesPerView: 2,
+    620: {
+      slidesPerView: 1.5,
       spaceBetween: 10,
     },
 
