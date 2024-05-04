@@ -10,30 +10,15 @@ burgerClick.addEventListener("click", () => {
 });
 
 // Получаем все ссылки с классом 'header__link'
-// const links = document.querySelectorAll(".header__link");
-
-// // Перебираем все ссылки
-// links.forEach((link) => {
-//   // Добавляем обработчик событий на клик
-//   link.addEventListener("click", function (event) {
-//     // Удаляем класс 'active' у всех ссылок
-//     links.forEach((link) => {
-//       link.classList.remove("active");
-//     });
-
-//     // Добавляем класс 'active' к текущей ссылке
-//     this.classList.add("active");
-//     mobMenu.classList.remove("active");
-//     burgerClick.classList.remove("active");
-//   });
-// });
-// Получаем все ссылки с классом 'header__link'
 const links = document.querySelectorAll(".header__link");
 
 // Перебираем все ссылки
 links.forEach((link) => {
   // Добавляем обработчик событий на клик
   link.addEventListener("click", function (event) {
+    burgerClick.classList.remove("active");
+    mobMenu.classList.remove("active");
+    scrollLock.classList.remove("lock");
     // Удаляем класс 'active' у всех ссылок и секций
     links.forEach((link) => {
       link.classList.remove("active");

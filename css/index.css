@@ -850,6 +850,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 767px) {
+  .indent {
+    padding-top: 85px px;
+  }
   .title {
     font-size: 25px;
   }
