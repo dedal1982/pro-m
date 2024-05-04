@@ -1083,3 +1083,11 @@ textarea::placeholder {
   transform: translate(-50%, -50%);
   background: #ffffff;
 }
+.send-form {
+  position: relative;
+}
+.form-close {
+  top: -40px;
+  border-radius: 50%;
+  z-index: 999;
+}

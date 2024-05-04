@@ -333,14 +333,15 @@
 
         <script src="./js/popup.js"></script>
       </div>
-      <div class="popup-form popup-form-open">
+      <div class="popup-form">
         <div class="form-submit">
-          <form class="general-form" action="#">
+          <form class="general-form send-form" action="#">
+            <button class="popup-close form-close">X</button>
             <input
               type="text"
               id="name"
               name="name"
-              required=""
+              required
               placeholder="Имя*"
             />
             <input
@@ -356,14 +357,14 @@
               id="email"
               pattern=".+@example\.com"
               size="30"
-              required=""
+              required
               placeholder="E-mail"
             />
             <input
               type="text"
               id="text"
               name="text"
-              required=""
+              required
               placeholder="Введите текущий год"
             />
             <button class="button general-button" type="submit">
