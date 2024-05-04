@@ -1,4 +1,4 @@
-//-------------------------------------
+//константы---------------------------------------------------------
 const popupPage = document.querySelector(".popup");
 const popupForm = document.querySelector(".popup-form");
 const popupClose = document.querySelectorAll(".popup-close");
