@@ -10,20 +10,48 @@ burgerClick.addEventListener("click", () => {
 });
 
 // Получаем все ссылки с классом 'header__link'
+// const links = document.querySelectorAll(".header__link");
+
+// // Перебираем все ссылки
+// links.forEach((link) => {
+//   // Добавляем обработчик событий на клик
+//   link.addEventListener("click", function (event) {
+//     // Удаляем класс 'active' у всех ссылок
+//     links.forEach((link) => {
+//       link.classList.remove("active");
+//     });
+
+//     // Добавляем класс 'active' к текущей ссылке
+//     this.classList.add("active");
+//     mobMenu.classList.remove("active");
+//     burgerClick.classList.remove("active");
+//   });
+// });
+// Получаем все ссылки с классом 'header__link'
 const links = document.querySelectorAll(".header__link");
 
 // Перебираем все ссылки
 links.forEach((link) => {
   // Добавляем обработчик событий на клик
   link.addEventListener("click", function (event) {
-    // Удаляем класс 'active' у всех ссылок
+    // Удаляем класс 'active' у всех ссылок и секций
     links.forEach((link) => {
       link.classList.remove("active");
     });
 
+    document.querySelectorAll("section").forEach((section) => {
+      section.classList.remove("active");
+    });
+
     // Добавляем класс 'active' к текущей ссылке
     this.classList.add("active");
-    mobMenu.classList.remove("active");
-    burgerClick.classList.remove("active");
+
+    // Находим секцию с соответствующим id
+    const section = document.getElementById(this.dataset.jac);
+
+    // Если секция найдена, добавляем ей класс 'active'
+    if (section) {
+      section.classList.add("active");
+    }
   });
 });

@@ -38,6 +38,8 @@ button {
 .lock {
   overflow: hidden;
 }
+.indent {
+}
 .title {
   font-family: "Tauri", sans-serif;
   font-weight: 400;
