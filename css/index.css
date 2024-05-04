@@ -39,6 +39,7 @@ button {
   overflow: hidden;
 }
 .indent {
+  padding-top: 123px;
 }
 .title {
   font-family: "Tauri", sans-serif;

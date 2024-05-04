@@ -51,7 +51,7 @@ links.forEach((link) => {
 
     // Если секция найдена, добавляем ей класс 'active'
     if (section) {
-      section.classList.add("active");
+      section.classList.add("indent");
     }
   });
 });
