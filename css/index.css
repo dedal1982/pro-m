@@ -981,6 +981,9 @@ textarea::placeholder {
   top: 0;
   right: 0;
   font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  color: red;
 }
 .popup-content .left {
   flex: 1;
@@ -1099,6 +1102,7 @@ textarea::placeholder {
   top: -40px;
   border-radius: 50%;
   z-index: 999;
+  background: #6d6d6d;
 }
 .mail-message {
   display: none;
