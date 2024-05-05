@@ -1154,3 +1154,18 @@ textarea::placeholder {
     font-size: 20px;
   }
 }
+.hover-subtitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hover-subtitle:hover {
+  color: #28e3d8;
+}
+.tours__paragraph {
+  position: relative;
+  text-overflow: ellipsis;
+  height: 125px;
+  overflow-y: hidden;
+}
